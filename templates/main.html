@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Kolabo Team" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+  <title>
+    Kolabo - Connecting Minds Creating Impact.
+  </title>
+  <link rel="stylesheet" href="{% static 'styles/style3cdd.css' %}" />
+</head>
+
+<body class="nk-body" data-menu-collapse="lg">
+  {% csrf_token %}
+
+  {% block content %}
+
+  {% endblock %}
+  </div>
+  <script src="{% static 'scripts/bundle3cdd.js' %}"></script>
+  <script src="{% static 'scripts/scripts3cdd.js' %}"></script>
+</body>
+
+</html>

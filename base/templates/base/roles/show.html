@@ -1,0 +1,51 @@
+{% extends 'main.html' %} {% load unicorn %} {% block content %}
+<div class="page-body-wrapper sidebar-icon">
+  {% include "base/partials/header.html" %}
+  <header class="main-nav">{% include "base/partials/sidebar.html"%}</header>
+  <!-- Page Sidebar Ends-->
+  <div class="page-body dashboard-2-main">
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Roles</h3>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'dashboard' %}">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'roles.index' %}">Roles</a>
+                </li>
+                <li class="breadcrumb-item active">Show</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container-fluid starts-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card" id="ex-small-btn">
+            <div class="card-header pb-0">
+              <h5>{{role.name}}</h5>
+            </div>
+            <div class="card-body btn-showcase">
+                {% for permission in permissions %}
+                <button class="btn btn-light btn-xs">
+                    {{permission.name}}
+                  </button>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container-fluid Ends-->
+  </div>
+  <!-- footer start-->
+  {% include "base/partials/footer.html"%}
+</div>
+{% endblock %}

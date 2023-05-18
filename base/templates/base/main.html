@@ -1,0 +1,989 @@
+{% extends 'main.html' %} 
+{% block content %}
+{% load static %}
+<div class="nk-app-root">
+  <header class="nk-header has-mask">
+    <div class="nk-mask bg-gradient-a"></div>
+    <div class="nk-mask bg-pattern-dot bg-blend-top"></div>
+    <div
+      class="nk-header-main nk-menu-main will-shrink is-transparent ignore-mask"
+    >
+      <div class="container">
+        <div class="nk-header-wrap">
+          <div class="nk-header-logo">
+            <a href="" class="logo-link"
+              ><div class="logo-wrap">
+                <img
+                  class="logo-img logo-light"
+                  src="{% static 'images/logo-dark.png' %}"
+                  srcset="{% static 'images/logo-drk.png' %} x2" width="160" height="39"
+                  alt=""
+                /><img
+                  class="logo-img logo-dark"
+                  src="{% static 'images/logo.png' %}"
+                  srcset="{% static 'images/logo.png' %} x2"
+                  alt=""
+                /></div
+            ></a>
+          </div>
+          <div class="nk-header-toggle">
+            <button class="dark-mode-toggle">
+              <em class="off icon ni ni-sun-fill"></em
+              ><em class="on icon ni ni-moon-fill"></em></button
+            ><button class="btn btn-light btn-icon header-menu-toggle">
+              <em class="icon ni ni-menu"></em>
+            </button>
+          </div>
+          <nav class="nk-header-menu nk-menu">
+            <ul class="nk-menu-list mx-auto">
+              <li class="nk-menu-item has-dropdown">
+                <a href="#" class="nk-menu-link nk-menu-toggle"
+                  ><span class="nk-menu-text">Home</span></a
+                >
+                <div class="nk-menu-dropdown">
+                  <ul class="nk-menu-sub">
+                    <li class="nk-menu-item">
+                      <a class="nk-menu-link" href="index.html">Home S1</a>
+                    </li>
+                    <li class="nk-menu-item">
+                      <a class="nk-menu-link" href="index-s2.html">Home S2</a>
+                    </li>
+                    <li class="nk-menu-item">
+                      <a class="nk-menu-link" href="index-s3.html">Home S3</a>
+                    </li>
+                    <li class="nk-menu-item">
+                      <a class="nk-menu-link" href="index-s4.html"
+                        >Home S4
+                        <div
+                          class="badge bg-primary ms-2 me-n4 px-2 rounded-pill"
+                        >
+                          New
+                        </div></a
+                      >
+                    </li>
+                    <li class="nk-menu-item">
+                      <a class="nk-menu-link" href="index-s5.html"
+                        >Home S5
+                        <div
+                          class="badge bg-primary ms-2 me-n4 px-2 rounded-pill"
+                        >
+                          New
+                        </div></a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nk-menu-item">
+                <a href="usecase.html" class="nk-menu-link"
+                  ><span class="nk-menu-text">Use Cases</span></a
+                >
+              </li>
+              <li class="nk-menu-item">
+                <a href="features.html" class="nk-menu-link"
+                  ><span class="nk-menu-text">Features</span></a
+                >
+              </li>
+              <li class="nk-menu-item has-dropdown">
+                <a href="#" class="nk-menu-link nk-menu-toggle"
+                  ><span class="nk-menu-text">Pages</span></a
+                >
+                <div class="nk-menu-dropdown nk-menu-mega">
+                  <div class="nk-menu-mega-wrap">
+                    <ul class="nk-menu-sub">
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="about.html">About</a>
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="usecase.html">Use Case</a>
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="usecase-details.html"
+                          >Use Case Details
+                          <div
+                            class="badge bg-primary ms-2 me-n4 px-2 rounded-pill"
+                          >
+                            New
+                          </div></a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="usecase-s2.html"
+                          >Use Case S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="usecase-details-s2.html"
+                          >Use Case Details S2
+                          <div
+                            class="badge bg-primary ms-2 me-n4 px-2 rounded-pill"
+                          >
+                            New
+                          </div></a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="pricing.html">Pricing</a>
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="pricing-s2.html"
+                          >Pricing S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="blog.html">Blog</a>
+                      </li>
+                    </ul>
+                    <ul class="nk-menu-sub">
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="blog-single.html"
+                          >Blog Single</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="features.html"
+                          >Features</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="contact.html">Contact</a>
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" href="contact-s2.html"
+                          >Contact S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="login.html"
+                          >Login</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="login-s2.html"
+                          >Login S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="register.html"
+                          >Register</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="register-s2.html"
+                          >Register S2</a
+                        >
+                      </li>
+                    </ul>
+                    <ul class="nk-menu-sub">
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="reset.html"
+                          >Reset</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="reset-s2.html"
+                          >Reset S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" target="_blank" href="404.html"
+                          >404 Error</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="404-s2.html"
+                          >404 Error S2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a class="nk-menu-link" target="_blank" href="504.html"
+                          >504 Error</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="504-s2.html"
+                          >504 Error s2</a
+                        >
+                      </li>
+                      <li class="nk-menu-item">
+                        <a
+                          class="nk-menu-link"
+                          target="_blank"
+                          href="terms-condition.html"
+                          >Terms &amp; Condition</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="nk-menu-item">
+                <a href="pricing.html" class="nk-menu-link"
+                  ><span class="nk-menu-text">Pricing</span></a
+                >
+              </li>
+            </ul>
+            <div class="mx-2 d-none d-lg-block">
+              <button class="dark-mode-toggle">
+                <em class="off icon ni ni-sun-fill"></em
+                ><em class="on icon ni ni-moon-fill"></em>
+              </button>
+            </div>
+            <ul class="nk-menu-buttons flex-lg-row-reverse">
+              <li><a href="#" class="btn btn-primary">Get started</a></li>
+              <li>
+                <a class="link link-dark" href="login.html">Login </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="nk-hero pt-xl-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-11 col-xl-9 col-xxl-8">
+            <div class="nk-hero-content py-5 py-lg-6">
+              <h1 class="title mb-3 mb-lg-4">
+                Welcome to the future of collaboration
+              </h1>
+              <p class="lead px-md-8 px-lg-6 mb-4 mb-lg-5">
+                If you're looking for a way to improve your team's collaboration, then Kolabo is the answer. With the right tools, you can bring your team together, no matter where they are.
+              </p>
+              <ul class="btn-list btn-list-inline">
+                <li>
+                  <a href="#" class="btn btn-secondary btn-lg"
+                    ><span>Get started for free</span></a
+                  >
+                </li>
+              </ul>
+              <p class="sub-text mt-2">No credit card required</p>
+            </div>
+            <div class="nk-hero-gfx">
+              <img
+                class="w-100 rounded-top-4"
+                src="{% static 'images/6.jpg' %}"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="nk-pages">
+    <section class="section section-bottom-0 has-shape">
+      <div
+        class="nk-shape bg-shape-blur-a mt-8 start-50 top-0 translate-middle-x"
+      ></div>
+      <div class="container">
+        <div class="section-head">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-8 col-xxl-7">
+              <h6 class="overline-title text-primary">Get started for free</h6>
+              <h2 class="title">Features</h2>
+              <p class="lead">
+                Start collaborating today with our virtual collaboration tools.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row text-center g-gs">
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-share"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Real-time file sharing</h4>
+                      <p>
+                        Kolabo enables instant and seamless exchange of files between users, facilitating quick collaboration and efficient transfer of data over networks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-msg"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Instant messaging</h4>
+                      <p>
+                        Kolabo Instant messaging allows individuals to exchange real-time text-based messages, fostering quick and direct communication across themselves
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-video"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Video conferencing</h4>
+                      <p>
+                        Kolabo video conferencing enables face-to-face communication and collaboration between individuals or groups in different locations, bridging the gap and enhancing remote collaboration and connectivity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-tranx-fill"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Screen sharing</h4>
+                      <p>
+                        Kolabo screen sharing allows users to instantly display their computer screens to others, fostering real-time collaboration, remote assistance, and effective communication.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-layout2"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Project management</h4>
+                      <p>
+                        Kolabo empowers teams to effectively plan, coordinate, and execute tasks remotely, fostering seamless communication and productivity regardless of geographical limitations.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-xl-4">
+              <div class="card rounded-4 border-0 shadow-tiny h-100">
+                <div class="card-body">
+                  <div class="feature">
+                    <div class="feature-media">
+                      <div
+                        class="media media-middle media-xl text-bg-primary-soft rounded-4"
+                      >
+                        <em class="icon ni ni-file-docs"></em>
+                      </div>
+                    </div>
+                    <div class="feature-text">
+                      <h4 class="title">Document collaboration</h4>
+                      <p>
+                        Kolabo document collaboration allows multiple individuals to work together on the same document simultaneously, enhancing productivity and fostering seamless teamwok
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section has-mask">
+      <div class="nk-mask bg-pattern-dot bg-blend-around mt-10p mb-3"></div>
+      <div class="container">
+        <!-- <div class="section-head">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-8 col-xxl-7">
+              <h6 class="overline-title text-primary">How it works</h6>
+              <h2 class="title">Instruct to our AI and generate copy</h2>
+              <p class="lead">
+                Give our AI a few descriptions and we'll automatically create
+                blog articles, product descriptions and more for you within just
+                few second.
+              </p>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="section-content">
+          <div class="row g-gs">
+            <div class="col-lg-4">
+              <div class="feature feature-inline">
+                <div class="feature-text me-auto">
+                  <h4 class="title">Select writing template</h4>
+                  <p>
+                    Simply choose a template from available list to write
+                    content for blog posts, landing page, website content etc.
+                  </p>
+                </div>
+                <div class="feature-decoration flex-shrink-0 ms-4">
+                  <img src="{% static 'images/number/1.png' %}" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="feature feature-inline">
+                <div class="feature-text me-auto">
+                  <h4 class="title">Describe your topic</h4>
+                  <p>
+                    Provide our AI content writer with few sentences on what you
+                    want to write, and it will start writing for you.
+                  </p>
+                </div>
+                <div class="feature-decoration flex-shrink-0 ms-4">
+                  <img src="{% static 'images/number/2.png' %}" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="feature feature-inline">
+                <div class="feature-text me-auto">
+                  <h4 class="title">Generate quality content</h4>
+                  <p>
+                    Our powerful AI tools will generate content in few second,
+                    then you can export it to wherever you need.
+                  </p>
+                </div>
+                <div class="feature-decoration flex-shrink-0 ms-4">
+                  <img src="{% static 'images/number/3.png' %}" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="section-actions text-center">
+          <ul class="btn-list btn-list-inline gx-gs gy-3">
+            <li>
+              <a href="#" class="btn btn-primary btn-lg"
+                ><span>Start free trial today</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="btn btn-primary btn-soft btn-lg"
+                ><em class="icon ni ni-play"></em
+                ><span>See action in video</span></a
+              >
+            </li>
+          </ul>
+        </div> -->
+        <div class="section-content">
+          <div class="row gx-5 gy-6 align-items-center">
+            <div class="col-lg-6 col-xl-6">
+              <div class="block-gfx pe-xl-5 pe-lg-3">
+                <img
+                  class="w-100 rounded-4"
+                  src="{% static 'images/gfx/feature/a.jpg' %}"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 col-xl-6">
+              <div class="block-text">
+                <h2 class="title">Kolabo Offers</h2>
+                <ul class="list gy-3">
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span
+                      >Increased productivity</span
+                    >
+                  </li>
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span>Improved communication</span>
+                  </li>
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span>Reduced costs</span>
+                  </li>
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span>Reduced costs</span>
+                  </li>
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span>Reduced costs</span>
+                  </li>
+                  <li>
+                    <em class="icon ni ni-minus text-primary"></em
+                    ><span>Reduced costs</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bottom-0 section-top-0">
+      <div class="container">
+        <div class="section-head">
+          <div class="row justify-content-center text-center">
+            <div class="col-lg-9 col-xl-7 col-xxl-6">
+              <h6 class="overline-title text-primary">Pricing</h6>
+              <h2 class="title">Start your content writing with AI</h2>
+              <p class="lead px-lg-10 px-xxl-9">
+                With our simple plans, supercharge your content writing to helps
+                your business.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row g-gs justify-content-center">
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing">
+                <div class="pricing-body p-5">
+                  <div class="text-center">
+                    <h5 class="mb-3">Bronze</h5>
+                    <h3 class="h2 mb-4">
+                      $9
+                      <span class="caption-text text-muted"> / month</span>
+                    </h3>
+                    <button class="btn btn-primary btn-soft btn-block">
+                      Start free trial today
+                    </button>
+                  </div>
+                  <ul class="list gy-3 pt-4 ps-2">
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>10,000</strong> Monthly Word Limit</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>10+</strong> Templates</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>30+ Languages</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Advance Editor Tool</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Regular Technical Support</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Unlimited Logins</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Newest Features</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing pricing-featured bg-primary">
+                <div class="pricing-body p-5">
+                  <div class="text-center">
+                    <h5 class="mb-3">Silver</h5>
+                    <h3 class="h2 mb-4">
+                      $19
+                      <span class="caption-text text-muted"> / month</span>
+                    </h3>
+                    <button class="btn btn-primary btn-block">
+                      Start free trial today
+                    </button>
+                  </div>
+                  <ul class="list gy-3 pt-4 ps-2">
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>20,000</strong> Monthly Word Limit</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>10+</strong> Templates</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>50+ Languages</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Advance Editor Tool</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Regular Technical Support</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Unlimited Logins</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Newest Features</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing">
+                <div class="pricing-body p-5">
+                  <div class="text-center">
+                    <h5 class="mb-3">Diamond</h5>
+                    <h3 class="h2 mb-4">
+                      $39
+                      <span class="caption-text text-muted"> / month</span>
+                    </h3>
+                    <button class="btn btn-primary btn-soft btn-block">
+                      Start free trial today
+                    </button>
+                  </div>
+                  <ul class="list gy-3 pt-4 ps-2">
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>50,000</strong> Monthly Word Limit</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span><strong>15+</strong> Templates</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>70+ Languages</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Advance Editor Tool</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Regular Technical Support</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Unlimited Logins</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check text-success"></em>
+                      <span>Newest Features</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bottom-0">
+      <div class="container">
+        <div class="section-head">
+          <div class="row justify-content-center text-center">
+            <div class="col-xl-8">
+              <h2 class="title">Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row g-gs justify-content-center">
+            <div class="col-xl-9 col-xxl-8">
+              <div
+                class="accordion accordion-flush accordion-plus-minus accordion-icon-accent"
+                id="faq-1"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-1-1"
+                    >
+                      What is a copy?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-1-1"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faq-1"
+                  >
+                    <div class="accordion-body">
+                      Yes, you can write long articel for your blog posts,
+                      product descriptions or any long article with CopyGen.
+                      We're always updating our template and tools, so let us
+                      know what are expecting!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-1-2"
+                    >
+                      Does CopyGen to write long articles?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-1-2"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faq-1"
+                  >
+                    <div class="accordion-body">
+                      Yes, you can write long articel for your blog posts,
+                      product descriptions or any long article with CopyGen.
+                      We're always updating our template and tools, so let us
+                      know what are expecting!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-1-3"
+                    >
+                      Is the generated content original?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-1-3"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faq-1"
+                  >
+                    <div class="accordion-body">
+                      Yes, you can write long articel for your blog posts,
+                      product descriptions or any long article with CopyGen.
+                      We're always updating our template and tools, so let us
+                      know what are expecting!
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#faq-1-4"
+                    >
+                      Do you have wordpress plugin?
+                    </button>
+                  </h2>
+                  <div
+                    id="faq-1-4"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faq-1"
+                  >
+                    <div class="accordion-body">
+                      Yes, you can write long articel for your blog posts,
+                      product descriptions or any long article with CopyGen.
+                      We're always updating our template and tools, so let us
+                      know what are expecting!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-bottom-0">
+      <div class="container">
+        <div class="section-wrap bg-primary bg-opacity-10 rounded-4">
+          <div class="section-content bg-pattern-dot-sm p-4 p-sm-6">
+            <div class="row justify-content-center text-center">
+              <div class="col-xl-8 col-xxl-9">
+                <div class="block-text">
+                  <h6 class="overline-title text-primary">
+                    Boost your writing productivity
+                  </h6>
+                  <h2 class="title">End writer’s block today</h2>
+                  <p class="lead mt-3">
+                    It’s like having access to a team of copywriting experts
+                    writing powerful copy for you in 1-click.
+                  </p>
+                  <ul class="btn-list btn-list-inline">
+                    <li>
+                      <a href="#" class="btn btn-lg btn-primary"
+                        ><span>Start writing for free</span
+                        ><em class="icon ni ni-arrow-long-right"></em
+                      ></a>
+                    </li>
+                  </ul>
+                  <ul class="list list-row gy-0 gx-3">
+                    <li>
+                      <em class="icon ni ni-check-circle-fill text-success"></em
+                      ><span>No credit card required</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check-circle-fill text-success"></em
+                      ><span>Cancel anytime</span>
+                    </li>
+                    <li>
+                      <em class="icon ni ni-check-circle-fill text-success"></em
+                      ><span>10+ tools to expolore</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="nk-footer">
+    <div class="section">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-xl-3 col-sm-4 col-6">
+            <div class="wgs">
+              <h6 class="wgs-title overline-title text-heading mb-3">
+                Use Case
+              </h6>
+              <ul class="list gy-2 list-link-base">
+                <li><a class="link-base" href="#">AI Writer</a></li>
+                <li><a class="link-base" href="#">AI Articel Writer</a></li>
+                <li><a class="link-base" href="#">Content Generator</a></li>
+                <li>
+                  <a class="link-base" href="#">AI Content Writing</a>
+                </li>
+                <li><a class="link-base" href="#">Content Rewriter</a></li>
+                <li><a class="link-base" href="#">Blog Post Writer</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4 col-6">
+            <div class="wgs">
+              <h6 class="wgs-title overline-title text-heading mb-3">About</h6>
+              <ul class="list gy-2 list-link-base">
+                <li><a class="link-base" href="#">Pricing</a></li>
+                <li><a class="link-base" href="#">Login</a></li>
+                <li><a class="link-base" href="#">Sign up</a></li>
+                <li><a class="link-base" href="#">Privacy Policy</a></li>
+                <li>
+                  <a class="link-base" href="#">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-2 col-sm-4 col-6">
+            <div class="wgs">
+              <h6 class="wgs-title overline-title text-heading mb-3">
+                CopyGen
+              </h6>
+              <ul class="list gy-2 list-link-base">
+                <li><a class="link-base" href="#">Contact Us</a></li>
+                <li><a class="link-base" href="#">FAQs</a></li>
+                <li><a class="link-base" href="#">Affiliate Program</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-7 col-md-9 me-auto order-xl-first">
+            <div class="block-text">
+              <a href="index.html" class="logo-link mb-4"
+                ><div class="logo-wrap">
+                  <img
+                    class="logo-img logo-light"
+                    src="images/logo.png"
+                    srcset="http://copygen.themenio.com/images/logo2x.png 2x"
+                    alt=""
+                  /><img
+                    class="logo-img logo-dark"
+                    src="images/logo-dark.png"
+                    srcset="
+                      http://copygen.themenio.com/images/logo-dark2x.png 2x
+                    "
+                    alt=""
+                  /></div
+              ></a>
+              <h4 class="title">Save time. Get inspired.</h4>
+              <p>
+                Automatically genarate blog articles, website copy, landing
+                pages &amp; digital ads for your business in seconds. Unleash
+                the most advanced AI writer to boost your traffic and
+                productitvity.
+              </p>
+              <p class="text-heading mt-4">
+                &copy; 2023 CopyGenAI. Template Made By
+                <a target="_blank" href="http://softnio.com/">Softnio</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<div
+  class="nk-sticky-toolbar z-index-highest position-fixed top-0 end-0 mt-12 pt-10"
+>
+  <ul class="rounded-start-1 overflow-hidden">
+    <li>
+      <a class="btn btn-icon btn-sm btn-info rounded-0" href="rtl/index.html"
+        ><small>RTL</small></a
+      >
+    </li>
+    <li class="border-top border-success border-opacity-50">
+      <a class="btn btn-icon btn-sm btn-success text-white rounded-0" href="#"
+        ><em class="icon ni ni-cart"></em
+      ></a>
+    </li>
+  </ul>
+</div>
+
+{% endblock %}

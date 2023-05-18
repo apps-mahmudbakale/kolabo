@@ -1,0 +1,76 @@
+{% extends 'main.html' %} {% load unicorn %} {% block content %}
+<div class="page-body-wrapper sidebar-icon">
+  {% include "base/partials/header.html" %}
+  <header class="main-nav">{% include "base/partials/sidebar.html"%}</header>
+  <!-- Page Sidebar Ends-->
+  <div class="page-body dashboard-2-main">
+    <!-- Container-fluid starts-->
+    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="page-header">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3>Roles</h3>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="{% url 'dashboard' %}">Dashboard</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a href="{% url 'roles.index' %}">Roles</a>
+                </li>
+                <li class="breadcrumb-item active">Create</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container-fluid starts-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="card" id="ex-small-btn">
+            <div class="card-header pb-0">
+              <h5>{{role.name}}</h5>
+            </div>
+            <div class="card-body btn-showcase">
+              <form action="" method="POST">
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                          <label class="form-label" for="exampleFormControlInput1">Role Name</label>
+                          <input class="form-control"  type="text" name="name" placeholder="Role Name">
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                        <label class="col-form-label">Permissions</label>
+                        <select name="permissions[]" class="js-example-basic-multiple col-sm-12 select2-hidden-accessible" multiple="" tabindex="-1" aria-hidden="true">
+                            {% for permission in permissions %}
+                                <option value="{{permission.id}}">{{permission.name}}</option>
+                            {% endfor %}
+                        </select>
+                        </div>
+                    </div>
+                   </div>
+                   <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                         <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                   </div>
+              </form>
+            </div> <!---hhd-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Container-fluid Ends-->
+  </div>
+  <!-- footer start-->
+  {% include "base/partials/footer.html"%}
+</div>
+{% endblock %}

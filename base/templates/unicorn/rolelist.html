@@ -1,0 +1,44 @@
+<div>
+    <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <h5>Roles</h5>
+            <a href="{% url 'roles.create' %}" class="btn btn-primary float-end"><i class="fa fa-plus-circle"></i></a>
+          </div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>S/N</th>
+                    <th>Name</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for role in roles %}
+                  <tr>
+                    <td>1</td>
+                    <td>{{role.name}}</td>
+                    <td>
+                      <div class="btn-group">
+                        <a href="{% url 'roles.show' role.id %}" class="btn btn-success btn-xs">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                        <a href="" class="btn btn-primary btn-xs">
+                          <i class="fa fa-edit"></i>
+                        </a>
+                        <button class="btn btn-danger btn-xs">
+                          <i class="fa fa fa-trash"></i>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
