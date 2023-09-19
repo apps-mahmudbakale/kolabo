@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h3 id="show-peer"></h3>
+<div style="display: flex;justify-content: space-around; margin:10px;">
+<div style="width: 400px; height:300px; border:2px solid;" id="our-video">Our Video</div>
+<div style="width: 400px; height:300px; border:2px solid;" id="remote-video">Remote Video</div>
+</div>
+<input id="peerID" placeholder="Peer ID">
+<button id="call-peer">Call Peer</button>
+<br>
+<button onclick="shareScreen()">Share Screen</button>
+
+{% endblock %}
