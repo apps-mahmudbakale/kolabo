@@ -1,7 +1,7 @@
 ![Logo](<static/images/Logo PMG 5.png>) 
 # Kolabo Virtual Collaboration Platform
 
-![Platform Image](static/images/tagline.png)
+![Platform Image](static/images/tagline1.png)
 
 ## Introduction
 
