@@ -1,5 +1,3 @@
-<img src="static/images/favicon.png" alt="Platform Image" width="200px" align="center">
-
 # Kolabo Virtual Collaboration Platform
 
 ![Platform Image](static/images/tagline1.png)
