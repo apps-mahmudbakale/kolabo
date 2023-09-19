@@ -1,4 +1,4 @@
-![Logo](<static/images/Logo PMG 5.png>) 
+<img src="static/images/logo.png" alt="Platform Image" width="500px">
 # Kolabo Virtual Collaboration Platform
 
 ![Platform Image](static/images/tagline1.png)
